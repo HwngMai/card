@@ -18,7 +18,7 @@ button:hover{
     height: 800px;
     background-color: var(--2nd-color);
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
