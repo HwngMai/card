@@ -152,7 +152,6 @@ body button:hover {
   flex-direction: column;
   border-radius: 10px;
 }
-
 .carou__pre--item:first-child {
   align-self: flex-end;
 }
@@ -578,7 +577,7 @@ body button:hover {
   /* ---- */
   display: flex;
   justify-content: space-between;
-  direction: row;
+
   align-items: center;
   gap: 5px;
 }
@@ -591,6 +590,11 @@ body button:hover {
   border-width: 1px;
   border-color: var(--3td-color);
   overflow: hidden;
+}
+.intro__partner--item--obj:hover {
+  width: 23vw;
+  height: calc(23vw * 35 / 28 / 2 );
+  transition: all 0.4s;
 }
 
 .intro__partner--item--obj img{
@@ -611,7 +615,6 @@ body button:hover {
   flex-direction: row;
   gap: 20px;
 }
-
 .intro__value--item{
   width: 45%;
   height: 400px;
@@ -656,7 +659,7 @@ body button:hover {
 /*PRICING*/
 .pricing {
   width: 90%;
-  height: 900px;
+  height: auto;
   background-color: var(--2nd-color);
   margin: 0 auto;
   /* ---- */
@@ -664,6 +667,7 @@ body button:hover {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 /* ------------------------------------------ */
 /*PRICING ITEM*/
@@ -696,6 +700,7 @@ body button:hover {
   align-items: center;
 }
 .pricing__para button{
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: var(--main-color);
   border-style: none;
@@ -736,32 +741,36 @@ body button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  /* align-items: flex-start; */
   gap: 30px;
+}
+.pricing__item--unit h2,h3,span,p{
+  /* text-align: center; */
+ }
+.pricing__item--unit:hover{
+  background-color: var(--main-color);
+  width: 27%;
+  transition: all 0.5s;
 }
 .pricing__item--uuper{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 .pricing__item--umid{
+  top:20%;
+  left: 0;
   width: 100%;
   display: flex;
+  /* ---- */
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
   gap: 5px;
 }
 .pricing__item--ulower{
+  background-color: #2e3339;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-self: flex-start;
-}
-.pricing__item--unit:hover{
-  background-color: var(--main-color);
-  transition: all 0.5s;
 }
 .pricing__item--unit button{
   width: 100%;
@@ -783,3 +792,98 @@ body button:hover {
 }
 /* ------------------------------------------ */
 /*FOOTER*/
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #0d1217;
+  /* ---- */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__nav {
+  width: 100%;
+  /* background-color: lightblue; */
+  /* ---- */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.footer__nav--item {
+  width: 30%;
+  height: 100px;
+  /* background-color: lightgreen; */
+  /* ---- */
+}
+.footer__nav--item:first-child{
+  width: 170px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* ---- */
+}
+.footer__nav--item:first-child img{
+  width: 100%;
+  /* ---- */
+}
+.footer__nav--item:nth-child(2){
+width: auto;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.footer__nav--item:nth-child(3){
+width: 170px;
+height: 100px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+.footer__nav--item ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.footer__nav--item ul li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+}
+.footer__nav--item:last-child ul li{
+  display: inline;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.footer__para {
+  width: 100%;
+  height: 50px;
+  /* background-color: lightcoral; */
+}
+.footer__para p {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.footer__para hr {
+  color: white;
+  width: 25%;
+}
+
+
+
