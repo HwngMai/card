@@ -744,9 +744,6 @@ body button:hover {
   /* align-items: flex-start; */
   gap: 30px;
 }
-.pricing__item--unit h2,h3,span,p{
-  /* text-align: center; */
- }
 .pricing__item--unit:hover{
   background-color: var(--main-color);
   width: 27%;
